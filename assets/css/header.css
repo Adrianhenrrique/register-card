@@ -1,0 +1,73 @@
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.steps .line {
+    position: absolute;
+    top: 47px;
+    width: 600px;
+    height: 1px;
+    background-color: #ffffff;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.steps > .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+.steps > .step > p {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+}
+
+.steps > .step > div {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202024;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.steps .step img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+}
+
+.steps .step .tree {
+    opacity: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info .title {
+    font-size: 27px;
+    margin: 7px 0px;
+}
+
+.info .subtitle {
+    font-size: 16px;
+    margin: 7px 0px;
+}

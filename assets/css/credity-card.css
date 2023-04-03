@@ -1,0 +1,70 @@
+.credit-card {
+    box-sizing: border-box;
+    background: #111827;
+    background-image: url(../images/cc-bg.svg);
+    border-radius: 16px;
+    color: #F9FAFB;
+    letter-spacing: 4px;
+}
+
+.credit-card > div {
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    border: 1px solid #374151;
+    backdrop-filter: blur(104px);
+    padding: 24px;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-flag {
+    opacity: 0;
+}
+
+.card-number-images {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    word-spacing: 15px;
+    margin-top: 40px;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    letter-spacing: 2px;
+}
+
+.card-name-images, .card-date-images {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.5;
+}
+
+.safe-info {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.shieldCheck {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}

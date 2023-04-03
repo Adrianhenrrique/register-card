@@ -1,6 +1,75 @@
+html {
+    width: 100%;
+    height: 100%;
+}
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #111827;
+    margin-top: 30px;
+}
+
+:root {
+    font-size: 62.5%;
+
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.card-cartao {
+    background-color: #374151;
+    border-radius: 10px;
+}
+
+.inputs {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 
+            "head content"
+            "foot foot";
+    padding: 32px;
+    background: #1F2937;
+    border: 1px solid #374151;
+    border-radius: 10px;
+}
+
+.card-data {
+    grid-area: head;
+}
+
+.cartao{
+    grid-area: content;
+    margin-left: 64px;
+}
+
+.add-card {
+    grid-area: foot;
+}
+
+.add-card {
+    background: #9333EA;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 16px 0px;
+    color: #F9FAFB;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 48px;
+}
+
+.derects {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 50px;
 }

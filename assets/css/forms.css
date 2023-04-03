@@ -1,0 +1,56 @@
+main {
+    max-width: 36rem;
+    display: grid;
+    gap: 1.6rem;
+  }
+  
+  main .input-wrapper {
+    display: grid;
+    gap: 0.6rem;
+    margin-left: 20px;
+  }
+  
+  main label {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.01px;
+    text-transform: uppercase;
+    color: #e1e1e6;
+    margin-bottom: 7px;
+  }
+  
+  main input {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    height: 41px;
+    padding-inline: 1.2rem;
+
+    width: 100%;
+  
+    color: white;
+    text-transform: uppercase;
+  }
+
+  main input::placeholder, main input:-ms-input-placeholder, main input::-ms-input-placeholder {
+    color: #9CA3AF;
+  }
+
+  main .add1 {
+    width: 182px;
+    margin-right: 16px;
+  }
+
+  main .add2 {
+    width: 130px;
+  }
+  
+  main .flex {
+    gap: 1.4rem;
+    display: flex;
+  }
+  
+  main .flex .input-wrapper {
+    flex: 1;
+  }

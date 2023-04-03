@@ -7,49 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão de credito</title>
 
-    <!-- css add -->
+    <!-- style -->
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/credity-card.css">
+    <link rel="stylesheet" href="./assets/css/forms.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header class="header">
+        <div class="steps">
+            <div class="line"></div>
+            <div class="step">
+                <div>
+                    <img src="./assets/images/profile.svg" alt="informação do cadastro">
+                </div>
+                <p>Criar conta</p>
+            </div>
+            <div class="step">
+                <div>
+                    <img src="./assets/images/location.svg" alt="informação da sua localização">
+                </div>
+                <p>Endereço</p>
+            </div>
+            <div class="step">
+                <div>
+                    <img class="tree" src="./assets/images/card.svg" alt="cadastrar cartão de credito">
+                </div>
+                <p>Pagamento</p>
+            </div>
+        </div>
+        <div class="info">
+            <h1 class="title">Cadastre seu cartão de crédito</h1>
+            <p class="subtitle">Preencha os campos para concluir o envio do seu pedido</p>
+        </div>
+    </header>
     <section class="card-cartao">
         <form action="card" class="inputs">
-            <main>
-                <label for="number-card">Número do cartão</label>
-                <input type="number" name="number-card" id="number-card"><br><br>
+            <main class="card-data">
+                <div class="input-wapper">
+                    <label for="number-card">Número do cartão</label><br>
+                    <input type="number" name="number-card" id="number-card" placeholder="0000 0000 0000 0000" maxlength="16">
+                </div>
 
-                <label for="name-card-holder">Número do cartão</label>
-                <input type="text" name="name-card-holder" id="name-card-holder">
-
-                <div class="row">
-                    <div class="left">
-                        <label for="validity-date">Validade</label>
-                        <input type="number" name="validity-date" id="validity-date">
+                <div class="input-wapper">
+                    <label for="name-card-holder">Nome do títular</label><br>
+                    <input type="text" name="name-card-holder" id="name-card-holder" placeholder="Nome como está no cartão">
+                </div>
+                <div class="flex">
+                    <div class="input-wapper add1">
+                        <label for="validity-date">Validade</label><br>
+                        <input type="number" name="validity-date" id="validity-date" placeholder="mm/aa" maxlength="4">
                     </div>
-                    <div class="right">
-                        <label for="cvv-card">CVV</label>
-                        <input type="number" name="cvv-card" id="cvv-card">
+                    <div class="input-wapper add2">
+                        <label for="cvv-card">CVV</label><br>
+                        <input type="number" name="cvv-card" id="cvv-card" placeholder="***" maxlength="3">
                     </div>
                 </div>
 
             </main>
             <div class="cartao">
                 <div class="credit-card">
-                    <div class="top-info">
-                        <img src="./assets/images/flag-mastercard.svg" alt="" class="card-flag">
-                        <img src="./assets/images/ContactlessPayment.svg" alt="" class="ContactlessPayment">
+                    <div>
+                        <div class="top-info">
+                            <img src="./assets/images/flag-mastercard.svg" alt="" class="card-flag">
+                            <img src="./assets/images/ContactlessPayment.svg" alt="" class="ContactlessPayment">
+                        </div>
+                        <h2 class="card-number-images">0000 0000 00** ****</h2>
+                        <div class="bottom-info">
+                            <h2 class="card-name-images">Seu nome aqui</h2>
+                            <h2 class="card-date-images">00/00</h2>
+                        </div>
                     </div>
-                    <h2 class="card-number-images">0000 0000 00** ****</h2>
-                    <div class="bottom-info">
-                        <h2 class="card-name-images">Seu nome aqui</h2>
-                        <h2 class="card-date-images">00/00</h2>
-                    </div>
+
                 </div>
                 <h2 class="safe-info"><img src="./assets/images/safe.svg" alt="icon for segurety"
-                        class="ShieldCheck">Seus dados estão seguros</h2>
+                        class="shieldCheck">Seus dados estão seguros</h2>
             </div>
+            <input class="add-card" type="button" value="Adicionar cartão">
         </form>
     </section>
+    <p class="derects">© Developed by Adrian Henrique</p>
 </body>
 
 </html>
