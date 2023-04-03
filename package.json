@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "imask": "^6.5.0-alpha.0"
+  },
+  "name": "register-card",
+  "version": "1.0.0",
+  "description": "registro de cartão de cartão de credito ",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrianhenrrique/register-card.git"
+  },
+  "author": "Adrian Henrique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adrianhenrrique/register-card/issues"
+  },
+  "homepage": "https://github.com/Adrianhenrrique/register-card#readme"
+}

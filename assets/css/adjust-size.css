@@ -1,0 +1,32 @@
+@media screen and (max-width: 720px) {
+    main input{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .steps .line{
+        width: 300px;
+    }
+
+    .steps > .step{
+        margin: 0px 30px;
+    }
+    .card-cartao .inputs{
+        grid-template-areas: 
+            "head head" 
+            "content content"
+            "foot foot";
+    }
+    .card-data {
+        grid-area: content;
+    }
+    .cartao{
+        grid-area: head;
+        margin: 0px;
+    }
+    .cartao h2{
+        margin-bottom: 20px;
+    }
+    .add-card {
+        grid-area: foot;
+    }
+}

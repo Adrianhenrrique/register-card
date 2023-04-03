@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/credity-card.css">
     <link rel="stylesheet" href="./assets/css/forms.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/adjust-size.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,8 +59,8 @@
                 </div>
 
                 <div class="input-wapper">
-                    <label for="name-card-holder">Nome do títular</label><br>
-                    <input type="text" name="name-card-holder" id="name-card-holder" placeholder="Nome como está no cartão">
+                    <label for="card-holder">Nome do títular</label><br>
+                    <input type="text" name="name-card-holder" id="card-holder" placeholder="Nome como está no cartão" maxlength="30">
                 </div>
                 <div class="flex">
                     <div class="input-wapper add1">
@@ -73,28 +74,42 @@
                 </div>
 
             </main>
-            <div class="cartao">
-                <div class="credit-card">
-                    <div>
-                        <div class="top-info">
-                            <img src="./assets/images/flag-mastercard.svg" alt="" class="card-flag">
-                            <img src="./assets/images/ContactlessPayment.svg" alt="" class="ContactlessPayment">
-                        </div>
-                        <h2 class="card-number-images">0000 0000 00** ****</h2>
-                        <div class="bottom-info">
-                            <h2 class="card-name-images">Seu nome aqui</h2>
-                            <h2 class="card-date-images">00/00</h2>
+            <div class="cartao"> 
+                <div class="type1">
+                    <div class="credit-card">
+                        <div>
+                            <div class="top-info">
+                                <img src="./assets/images/flag-mastercard.svg" alt="" class="card-flag">
+                                <img src="./assets/images/ContactlessPayment.svg" alt="" class="ContactlessPayment">
+                            </div>
+                            <h2 class="card-number-images">0000 0000 00** ****</h2>
+                            <div class="bottom-info">
+                                <h2 class="card-name-images">Seu nome aqui</h2>
+                                <h2 class="card-date-images">00/00</h2>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+                <div class="type2">
+                    <div class="credit-card" hidden>
+                        <div>
+                            <div class="rectangle"></div>
+                            <div class="security">
+                                <p class="cc-security"><span>* * *</span></p> <h2>CVV</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <h2 class="safe-info"><img src="./assets/images/safe.svg" alt="icon for segurety"
                         class="shieldCheck">Seus dados estão seguros</h2>
             </div>
-            <input class="add-card" type="button" value="Adicionar cartão">
+            <input class="add-card" type="button" value="Adicionar cartão" id="add-cards">
         </form>
     </section>
     <p class="derects">© Developed by Adrian Henrique</p>
+
+    <script src="./assets/main.js"></script>
 </body>
 
 </html>

@@ -69,7 +69,8 @@ body {
 }
 
 .derects {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     margin-bottom: 50px;
+    margin-top: 50px;
 }

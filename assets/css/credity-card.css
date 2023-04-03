@@ -68,3 +68,39 @@
     height: 20px;
     margin-right: 5px;
 }
+
+.type2 .credit-card div {
+    padding: 0px;
+}
+
+.rectangle {
+    background: #111827;
+    height: 32px;
+    width: 264px;
+    margin-top: 16px;
+    margin-bottom: 46px;
+}
+
+.security {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.security .cc-security{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 12px;
+    width: 150px;
+    background: #D1D5DB;
+    border-radius: 4px;
+    color: rgba(00, 00, 00);
+    margin-right: 10px;
+}
+
+.security .cc-security span {
+    position: relative;
+    right: 0px;
+}
